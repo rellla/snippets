@@ -3,41 +3,50 @@
 
 int do_conversion1(float bright_in, float contrast_in, float saturation_in, float hue_in);
 int do_conversion2(unsigned long bright_in, unsigned long contrast_in, unsigned long saturation_in, unsigned long hue_in);
+int do_conversion3(signed int bright_in, signed int contrast_in, signed int saturation_in, signed int hue_in);
 
 
 int do_conversion1(float bright_in, float contrast_in, float saturation_in, float hue_in)
 {
         unsigned long bright_out, contrast_out, saturation_out, hue_out;
 
+        printf("    Bright In: %f\n", bright_in);
+        printf("    Contrast In: %f\n", contrast_in);
+        printf("    Saturation In: %f\n", saturation_in);
+        printf("    Hue In: %f\n", hue_in);
+
         bright_out = (unsigned long)(((bright_in + 1.0) / 2.0 * 100.0) + 0.5);
         contrast_out = (unsigned long)((contrast_in * 10.0) + 0.5);
         saturation_out = (unsigned long)((saturation_in * 10.0) + 0.5);
         hue_out = (unsigned long)((((hue_in / M_PI) + 1.0) / 2.0 * 100.0) + 0.5);
 
-        printf("\nConversion to 0-100:\n\n");
-        printf("Bright In: %f, Bright Out: %lu\n", bright_in, bright_out);
-        printf("Contrast In: %f, Contrast Out: %lu\n", contrast_in, contrast_out);
-        printf("Saturation In: %f, Saturation Out: %lu\n", saturation_in, saturation_out);
-        printf("Hue In: %f, Hue Out: %lu\n", hue_in, hue_out);
+        printf("Conversion to 0-100:\n");
+        printf("    Bright Out: %lu\n", bright_out);
+        printf("    Contrast Out: %lu\n", contrast_out);
+        printf("    Saturation Out: %lu\n", saturation_out);
+        printf("    Hue Out: %lu\n", hue_out);
 
 	return do_conversion2(bright_out, contrast_out, saturation_out, hue_out);
 }
 
 int do_conversion2(unsigned long bright_in, unsigned long contrast_in, unsigned long saturation_in, unsigned long hue_in)
 {
-        signed int bright_out, contrast_out, saturation_out, hue_out;
+        printf("Conversion to 0-32:\n");
 
-        bright_out = (signed int)((bright_in * 63.0 / 100.0) + 0.5);
-        contrast_out = (signed int)((contrast_in * 63.0 / 100.0) + 0.5);
-        saturation_out = (signed int)((saturation_in * 63.0 / 100.0) + 0.5);
-        hue_out = (signed int)((hue_in * 63.0 / 100.0) + 0.5);
+	return do_conversion3(bright_in, contrast_in, saturation_in, hue_in);
+}
 
-        printf("\nConversion to 0-32:\n\n");
-        printf("Bright In: %lu, Bright Out: %d\n", bright_in, bright_out);
-        printf("Contrast In: %lu, Contrast Out: %d\n", contrast_in, contrast_out);
-        printf("Saturation In: %lu, Saturation Out: %d\n", saturation_in, saturation_out);
-        printf("Hue In: %lu, Hue Out: %d\n", hue_in, hue_out);
-        printf("-----------------------\n");
+int do_conversion3(signed int bright, signed int contrast, signed int saturation, signed int hue)
+{
+        bright = (bright * 63.0 / 100.0) + 0.5;
+        contrast = (contrast * 63.0 / 100.0) + 0.5;
+        saturation = (saturation * 63.0 / 100.0) + 0.5;
+        hue = (hue * 63.0 / 100.0) + 0.5;
+
+        printf("    Bright: %d\n", bright);
+        printf("    Contrast: %d\n", contrast);
+        printf("    Saturation: %d\n", saturation);
+        printf("    Hue: %d\n", hue);
 
 	return 0;
 }
@@ -46,20 +55,21 @@ int main()
 {
         float bright_in, contrast_in, saturation_in, hue_in;
 
-        bright_in = 0.0;
-        contrast_in = 5.0;
-        saturation_in = 5.0;
-        hue_in = 0.0;
-
-	do_conversion1(bright_in, contrast_in, saturation_in, hue_in);
-
+        printf("--------Minimum--------\n");
         bright_in = -1.0;
         contrast_in = 0.0;
         saturation_in = 0.0;
         hue_in = -M_PI;
-
 	do_conversion1(bright_in, contrast_in, saturation_in, hue_in);
 
+        printf("--------Avarage--------\n");
+        bright_in = 0.0;
+        contrast_in = 5.0;
+        saturation_in = 5.0;
+        hue_in = 0.0;
+	do_conversion1(bright_in, contrast_in, saturation_in, hue_in);
+
+        printf("--------Maximum--------\n");
         bright_in = 1.0;
         contrast_in = 10.0;
         saturation_in = 10.0;
