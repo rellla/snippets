@@ -20,7 +20,7 @@ int do_conversion1(float bright_in, float contrast_in, float saturation_in, floa
         printf("Saturation In: %f, Saturation Out: %lu\n", saturation_in, saturation_out);
         printf("Hue In: %f, Hue Out: %lu\n", hue_in, hue_out);
 
-	do_conversion2(bright_out, contrast_out, saturation_out, hue_out);
+	return do_conversion2(bright_out, contrast_out, saturation_out, hue_out);
 }
 
 int do_conversion2(unsigned long bright_in, unsigned long contrast_in, unsigned long saturation_in, unsigned long hue_in)
@@ -37,15 +37,17 @@ int do_conversion2(unsigned long bright_in, unsigned long contrast_in, unsigned 
         printf("Contrast In: %lu, Contrast Out: %d\n", contrast_in, contrast_out);
         printf("Saturation In: %lu, Saturation Out: %d\n", saturation_in, saturation_out);
         printf("Hue In: %lu, Hue Out: %d\n", hue_in, hue_out);
-        printf("\n-----------------------");
+        printf("-----------------------\n");
+
+	return 0;
 }
 
 int main()
 {
         float bright_in, contrast_in, saturation_in, hue_in;
 
-        bright_in = -0.02;
-        contrast_in = 5.1;
+        bright_in = 0.0;
+        contrast_in = 5.0;
         saturation_in = 5.0;
         hue_in = 0.0;
 
