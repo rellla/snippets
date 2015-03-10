@@ -16,8 +16,14 @@ int do_conversion1(float bright_in, float contrast_in, float saturation_in, floa
         printf("    Hue In: %f\n", hue_in);
 
         bright_out = (unsigned long)(((bright_in + 1.0) / 2.0 * 100.0) + 0.5);
-        contrast_out = (unsigned long)((contrast_in * 10.0) + 0.5);
-        saturation_out = (unsigned long)((saturation_in * 10.0) + 0.5);
+	if (contrast_in <= 1.0)
+		contrast_out = (unsigned long)((contrast_in * 50.0) + 0.5);
+	else
+		contrast_out = (unsigned long)((50 + (contrast_in / 10) * 50.0) + 0.5);
+	if (saturation_in <= 1.0)
+		saturation_out = (unsigned long)((saturation_in * 50.0) + 0.5);
+	else
+		saturation_out = (unsigned long)((50 + (saturation_in / 10) * 50.0) + 0.5);
         hue_out = (unsigned long)((((hue_in / M_PI) + 1.0) / 2.0 * 100.0) + 0.5);
 
         printf("Conversion to 0-100:\n");
@@ -62,10 +68,10 @@ int main()
         hue_in = -M_PI;
 	do_conversion1(bright_in, contrast_in, saturation_in, hue_in);
 
-        printf("--------Avarage--------\n");
+        printf("-----No change---------\n");
         bright_in = 0.0;
-        contrast_in = 5.0;
-        saturation_in = 5.0;
+        contrast_in = 1.0;
+        saturation_in = 1.0;
         hue_in = 0.0;
 	do_conversion1(bright_in, contrast_in, saturation_in, hue_in);
 
