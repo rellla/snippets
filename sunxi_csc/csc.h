@@ -47,5 +47,5 @@ static const csc_m cs_smpte_240m = {
 	{ 1.164f,  2.079f,   0.0f,     0.0f, }
 };
 
-static int set_csc_matrix(mixer_t *mix, csc_m *matrix);
+static int set_csc_matrix(mixer_t *mix, csc_m *matrix, const csc_m *cstd);
 static int generate_csc_matrix(procamp_t *procamp, color_standard_t standard, csc_m *csc_matrix);
