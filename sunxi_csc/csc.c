@@ -11,33 +11,55 @@ static int set_csc_matrix(mixer_t *mix, csc_m *matrix, const csc_m *cstd)
 
 	mix->csc_change = 1;
 
-	// Contrast
-	mix->contrast = (*matrix)[0][0] / (*cstd)[0][0];
-
-	// Hue
-	asin = asinf(sqrtf(pow(((*matrix)[1][1] * (*cstd)[1][2] - (*matrix)[1][2] * (*cstd)[1][1]), 2.0) /
-             (pow((-(*matrix)[1][1] * (*cstd)[1][1] - (*matrix)[1][2] * (*cstd)[1][2]), 2.0) +  pow(((*matrix)[1][1] * (*cstd)[1][2] - (*matrix)[1][2] * (*cstd)[1][1]), 2.0))));
-
-	// Todo:
-	// Map asin correctly. -M_PI and M_PI not correct
-	// Error, when contrast = 0
-	if (((*matrix)[2][1] < 0 && (*cstd)[2][1] < 0) || ((*matrix)[2][1] > 0 && (*cstd)[2][1] > 0))
-		if (((*matrix)[0][1] < 0 && (*matrix)[0][2] > 0) || ((*matrix)[0][1] > 0 && (*matrix)[0][2] < 0))
-			mix->hue = asin;
-		else
-			mix->hue = - asin;
+	// At least contrast was 0.0f. Set Hue and saturation to default. They cannot be guessed...
+	if ((*matrix)[1][0] == 0 && (*matrix)[1][1] == 0 && (*matrix)[1][2] == 0)
+	{
+		mix->contrast = 0.0f;
+		mix->hue = 0.0f;
+		mix->saturation = 1.0f;
+	}
+	// Saturation was 0.0f. Set Hue to default. This cannot be guessed...
+	else if ((*matrix)[1][1] == 0 && (*matrix)[1][2] == 0)
+	{
+		mix->saturation = 0.0f;
+		// Contrast
+		mix->contrast = (*matrix)[0][0] / (*cstd)[0][0];
+		mix->hue = 0.0f;
+	}
 	else
-		if (((*matrix)[0][1] < 0 && (*matrix)[0][2] > 0) || ((*matrix)[0][1] > 0 && (*matrix)[0][2] < 0))
-			mix->hue = - M_PI + asin;
-		else
-			mix->hue = M_PI - asin;
+	{
+		// Contrast
+		mix->contrast = (*matrix)[0][0] / (*cstd)[0][0];
 
-	// Saturation
-	mix->saturation = (*matrix)[1][1] / (mix->contrast * ((*cstd)[1][1] * cosf(mix->hue) - (*cstd)[1][2] * sinf(mix->hue)));
+		// Hue
+		asin = asinf(sqrtf(pow(((*matrix)[1][1] * (*cstd)[1][2] - (*matrix)[1][2] * (*cstd)[1][1]), 2.0) /
+		       (pow((-(*matrix)[1][1] * (*cstd)[1][1] - (*matrix)[1][2] * (*cstd)[1][2]), 2.0) +
+		        pow(((*matrix)[1][1] * (*cstd)[1][2] - (*matrix)[1][2] * (*cstd)[1][1]), 2.0))));
+
+		if (((*matrix)[2][1] < 0 && (*cstd)[2][1] < 0) || ((*matrix)[2][1] > 0 && (*cstd)[2][1] > 0))
+			if (((*matrix)[0][1] < 0 && (*matrix)[0][2] > 0) || ((*matrix)[0][1] > 0 && (*matrix)[0][2] < 0))
+				mix->hue = asin;
+			else
+				mix->hue = - asin;
+		else
+			if (((*matrix)[0][1] < 0 && (*matrix)[0][2] > 0) || ((*matrix)[0][1] > 0 && (*matrix)[0][2] < 0))
+				mix->hue = - M_PI + asin;
+			else
+				mix->hue = M_PI - asin;
+
+		// Check, if Hue was M_PI or -M_PI
+		if ((fabs(fabs(mix->hue) - M_PI)) < 0.00001f)
+			mix->hue = - mix->hue;
+
+		// Saturation
+		mix->saturation = (*matrix)[1][1] / (mix->contrast * ((*cstd)[1][1] * cosf(mix->hue) - (*cstd)[1][2] * sinf(mix->hue)));
+	}
 
 	// Brightness
-	mix->brightness = ((*matrix)[1][3] - (*cstd)[1][1] * mix->contrast * mix->saturation * (cbbias * cosf(mix->hue) + crbias * sinf(mix->hue)) -
-	(*cstd)[1][2] * mix->contrast * mix->saturation * (crbias * cosf(mix->hue) - cbbias * sinf(mix->hue)) - (*cstd)[1][3] - (*cstd)[1][0] * mix->contrast * ybias) / (*cstd)[1][0];
+	mix->brightness = ((*matrix)[1][3] -
+	                  (*cstd)[1][1] * mix->contrast * mix->saturation * (cbbias * cosf(mix->hue) + crbias * sinf(mix->hue)) -
+	                  (*cstd)[1][2] * mix->contrast * mix->saturation * (crbias * cosf(mix->hue) - cbbias * sinf(mix->hue)) -
+	                  (*cstd)[1][3] - (*cstd)[1][0] * mix->contrast * ybias) / (*cstd)[1][0];
 
 	return 0;
 }
@@ -107,11 +129,11 @@ int main ()
 	static mixer_t mix;
 	color_standard_t standard;
 
-	// Use Procamp to generate CSC Matrix
-	procamp.brightness = 0.0f;
-	procamp.saturation = 1.0f;
-	procamp.contrast = 1.0f;
-	procamp.hue = 0.0f;
+	// Use procamp values to generate CSC matrix
+	procamp.brightness = 0.0f;	// -1.0f ~  1.0f
+	procamp.saturation = 1.0f;	//  0.0f ~ 10.0f
+	procamp.contrast = 1.0f;	//  0.0f ~ 10.0f
+	procamp.hue = 0.0f;		// -M_PI ~  M_PI
 
 	p_ptr = &procamp;
 	csc_ptr = &csc;
@@ -140,22 +162,22 @@ int main ()
 		printf("-------------------------\n");
 		printf("\t\tProcamp\t\t\tMixer\n");
 		printf("Brightness:\t%f\t\t%f", p_ptr->brightness, mix_ptr->brightness);
-		if ((p_ptr->brightness - mix_ptr->brightness) < 0.001f)
+		if (pow((p_ptr->brightness - mix_ptr->brightness), 2.0) < 0.00001f)
 			printf("\tBrightness MATCH\n");
 		else
 			printf("\tERROR Brightness MATCH\n");
 		printf("Saturation:\t%f\t\t%f", p_ptr->saturation, mix_ptr->saturation);
-		if ((p_ptr->saturation - mix_ptr->saturation) < 0.001f)
+		if (pow((p_ptr->saturation - mix_ptr->saturation), 2.0) < 0.00001f)
 			printf("\tSaturation MATCH\n");
 		else
 			printf("\tERROR Saturation MATCH\n");
 		printf("Contrast:\t%f\t\t%f", p_ptr->contrast, mix_ptr->contrast);
-		if ((p_ptr->contrast - mix_ptr->contrast) < 0.001f)
+		if (pow((p_ptr->contrast - mix_ptr->contrast), 2.0) < 0.00001f)
 			printf("\tContrast MATCH\n");
 		else
 			printf("\tERROR Contrast MATCH\n");
 		printf("Hue:\t\t%f\t\t%f", p_ptr->hue, mix_ptr->hue);
-		if ((p_ptr->hue - mix_ptr->hue) < 0.001f)
+		if (pow((p_ptr->hue - mix_ptr->hue), 2.0) < 0.00001f)
 			printf("\tHue MATCH\n");
 		else
 			printf("\tERROR Hue MATCH\n");
