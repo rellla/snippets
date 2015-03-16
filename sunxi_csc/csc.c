@@ -118,7 +118,7 @@ void print_matrix(csc_m *matrix)
 	}
 }
 
-int main ()
+int print_std (double b, double s, double c, double h)
 {
 	static csc_m csc;
 	static csc_m *csc_ptr;
@@ -130,10 +130,10 @@ int main ()
 	color_standard_t standard;
 
 	// Use procamp values to generate CSC matrix
-	procamp.brightness = 0.0f;	// -1.0f ~  1.0f
-	procamp.saturation = 1.0f;	//  0.0f ~ 10.0f
-	procamp.contrast = 1.0f;	//  0.0f ~ 10.0f
-	procamp.hue = 0.0f;		// -M_PI ~  M_PI
+	procamp.brightness = b;	// -1.0f ~  1.0f
+	procamp.saturation = s;	//  0.0f ~ 10.0f
+	procamp.contrast = c;	//  0.0f ~ 10.0f
+	procamp.hue = h;		// -M_PI ~  M_PI
 
 	p_ptr = &procamp;
 	csc_ptr = &csc;
@@ -146,8 +146,11 @@ int main ()
 	standard = BT_601;
 	printf("BT_601 Matrix (Procamp):\n");
 	if(!generate_csc_matrix(p_ptr, standard, csc_ptr))
+	{
 		print_matrix(csc_ptr);
+	}
 
+/*
 	cstd = &cs_bt709;
 	printf("BT_709 Matrix:\n");
 	print_matrix((csc_m *)cstd);
@@ -155,32 +158,86 @@ int main ()
 	standard = BT_709;
 	printf("BT_709 Matrix (Procamp):\n");
 	if(!generate_csc_matrix(p_ptr, standard, csc_ptr))
+	{
 		print_matrix(csc_ptr);
+	}
+*/
+
+}
+
+int test (double b, double s, double c, double h)
+{
+	static csc_m csc;
+	static csc_m *csc_ptr;
+	static const csc_m *cstd;
+	static procamp_t procamp;
+	static procamp_t *p_ptr;
+	static mixer_t *mix_ptr;
+	static mixer_t mix;
+	color_standard_t standard;
+
+	// Use procamp values to generate CSC matrix
+	procamp.brightness = b;	// -1.0f ~  1.0f
+	procamp.saturation = s;	//  0.0f ~ 10.0f
+	procamp.contrast = c;	//  0.0f ~ 10.0f
+	procamp.hue = h;		// -M_PI ~  M_PI
+
+	p_ptr = &procamp;
+	csc_ptr = &csc;
+	mix_ptr = &mix;
+
+	cstd = &cs_bt601;
+//	printf("BT_601 Matrix:\n");
+//	print_matrix((csc_m *)cstd);
+
+	standard = BT_601;
+//	printf("BT_601 Matrix (Procamp):\n");
+	if(!generate_csc_matrix(p_ptr, standard, csc_ptr))
+	{
+//		print_matrix(csc_ptr);
+	}
+
+	cstd = &cs_bt709;
+//	printf("BT_709 Matrix:\n");
+//	print_matrix((csc_m *)cstd);
+
+	standard = BT_709;
+//	printf("BT_709 Matrix (Procamp):\n");
+	if(!generate_csc_matrix(p_ptr, standard, csc_ptr))
+	{
+//		print_matrix(csc_ptr);
+	}
 
 	if(!set_csc_matrix(mix_ptr, csc_ptr, cstd))
 	{
-		printf("-------------------------\n");
-		printf("\t\tProcamp\t\t\tMixer\n");
-		printf("Brightness:\t%f\t\t%f", p_ptr->brightness, mix_ptr->brightness);
-		if (pow((p_ptr->brightness - mix_ptr->brightness), 2.0) < 0.00001f)
-			printf("\tBrightness MATCH\n");
-		else
-			printf("\tERROR Brightness MATCH\n");
-		printf("Saturation:\t%f\t\t%f", p_ptr->saturation, mix_ptr->saturation);
-		if (pow((p_ptr->saturation - mix_ptr->saturation), 2.0) < 0.00001f)
-			printf("\tSaturation MATCH\n");
-		else
-			printf("\tERROR Saturation MATCH\n");
-		printf("Contrast:\t%f\t\t%f", p_ptr->contrast, mix_ptr->contrast);
-		if (pow((p_ptr->contrast - mix_ptr->contrast), 2.0) < 0.00001f)
-			printf("\tContrast MATCH\n");
-		else
-			printf("\tERROR Contrast MATCH\n");
-		printf("Hue:\t\t%f\t\t%f", p_ptr->hue, mix_ptr->hue);
-		if (pow((p_ptr->hue - mix_ptr->hue), 2.0) < 0.00001f)
-			printf("\tHue MATCH\n");
-		else
-			printf("\tERROR Hue MATCH\n");
+
+		if (!(pow((p_ptr->brightness - mix_ptr->brightness), 2.0) < 0.001f) ||
+		    !(pow((p_ptr->saturation - mix_ptr->saturation), 2.0) < 0.001f) ||
+		    !(pow((p_ptr->contrast - mix_ptr->contrast), 2.0) < 0.001f) ||
+		    !(pow((p_ptr->hue - mix_ptr->hue), 2.0) < 0.001f))
+			printf("%g %g %g %g -> %g %g %g %g\n",
+			        p_ptr->brightness, p_ptr->saturation, p_ptr->contrast, p_ptr->hue,
+			        mix_ptr->brightness, mix_ptr->saturation, mix_ptr->contrast, mix_ptr->hue);
+	}
+}
+
+int main ()
+{
+	double b, s, c, h;
+//	print_std(0.0f, 0.0f, 2.0f, 0.0f);
+
+	for (b = -1.0; b <= 1.0; b += 1.0)
+	{
+		for (s = 0.0; s <= 10.0; s += 1.0)
+		{
+			for (c = 0.0; c <= 10.0; c += 1.0)
+			{
+				for (h = -M_PI; h <= M_PI; h += 0.5*M_PI)
+				{
+					test1(b, s, c, h);
+				}
+			}
+		}
 	}
 
 	return 0;

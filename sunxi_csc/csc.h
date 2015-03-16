@@ -7,18 +7,18 @@ typedef enum {
 } color_standard_t;
 
 typedef struct {
-	float brightness;
-	float saturation;
-	float contrast;
-	float hue;
+	double brightness;
+	double saturation;
+	double contrast;
+	double hue;
 } procamp_t;
 
 typedef struct {
 	int   csc_change;
-	float brightness;
-	float saturation;
-	float contrast;
-	float hue;
+	double brightness;
+	double saturation;
+	double contrast;
+	double hue;
 } mixer_t;
 
 typedef float csc_m[3][4];
