@@ -21,7 +21,7 @@
 #include <pthread.h>
 #include <stdio.h>
 
-void *thread(void *param)
+void *thread1(void *param)
 {
 	pthread_setcancelstate(PTHREAD_CANCEL_DISABLE, NULL);
 
@@ -30,11 +30,11 @@ void *thread(void *param)
 	int i = 0;
 
 	while (!var->thread_exit) {
-		printf("%d\n", ++i);
+		printf("1: %d\n", ++i);
 		usleep(1000 * 1000);
 	}
 
-	printf("End signal received!\n");
+	printf("1: End signal received!\n");
 
 	return NULL;
 }

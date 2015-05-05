@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -g
 LIBS = -lpthread
-OBJ = thread.o main.o
+OBJ = thread.o thread2.o main.o
 TARGET = thread
 
 %.o: %.c $(DEPS)

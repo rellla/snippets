@@ -17,16 +17,18 @@
  *
  */
 
-#ifndef __THREAD_H__
-#define __THREAD_H__
+#include "thread.h"
+#include <pthread.h>
+#include <stdio.h>
 
-typedef struct {
-	int thread_exit;
-} vars;
+void *thread2(void *param)
+{
+	vars *var = (vars *)param;
 
-vars var;
+	usleep(5 * 1000 * 1000);
+	var->thread_exit = 1;
 
-void *thread1(void *param);
-void *thread2(void *param);
+	printf("2: End signal set!\n");
 
-#endif
+	return NULL;
+}

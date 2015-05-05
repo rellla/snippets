@@ -21,25 +21,27 @@
 #include <pthread.h>
 #include <stdio.h>
 
-static pthread_t thread_id;
+static pthread_t thread_1;
+static pthread_t thread_2;
 extern vars var;
 
 int main()
 {
 	vars *var_ptr = &var;
+
 	var_ptr->thread_exit = 0;
-	printf("Start\n");
+	printf("MAIN: Start\n");
 
-	pthread_create(&thread_id, NULL, thread, var_ptr);
+	pthread_create(&thread_1, NULL, thread1, var_ptr);
+	pthread_create(&thread_2, NULL, thread2, var_ptr);
 
-	usleep(5 * 1000 * 1000);
+	pthread_join(thread_1, NULL);
+	pthread_join(thread_2, NULL);
 
-	var_ptr->thread_exit = 1;
-	pthread_join(thread_id, NULL);
-	printf("Ended, wait 2 seconds ...\n");
+	printf("MAIN: Ended, wait 2 seconds ...\n");
 
 	usleep(2 * 1000 * 1000);
-	printf("Exit!\n");
+	printf("MAIN: Exit!\n");
 
 	return 0;
 }
