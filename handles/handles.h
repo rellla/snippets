@@ -19,9 +19,9 @@ typedef struct
 	int decoder;
 } decoder_ctx_t;
 
-int handle_create(void *data, int handletype);
-void *handle_get(int handle, int handletype);
-int handle_put(int handle, int handletype);
-int handle_destroy(int handle, int handletype);
+void *handle_create(size_t size, int *handle);
+void *handle_get(int handle);
+int handle_put(int handle);
+int handle_destroy(int handle);
 
 #endif

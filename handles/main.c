@@ -24,20 +24,12 @@
 
 int device_create(int *device)
 {
-	device_ctx_t *dev = calloc(1, sizeof(device_ctx_t));
+	device_ctx_t *dev = handle_create(sizeof(*dev), device);
+
 	if (!dev)
 		goto err;
 
 	dev->device = 5;
-
-	int handle = handle_create(dev, HT_DEVICE);
-	if (handle == -1)
-	{
-		free(dev);
-		goto err;
-	}
-
-	*device = handle;
 
 	return 0;
 err:
@@ -47,31 +39,23 @@ err:
 
 int device_destroy(int device)
 {
-	decoder_ctx_t *dev = handle_get(device, HT_DEVICE);
+	decoder_ctx_t *dev = handle_get(device);
 	if (!dev)
 		return 1;
 
-	handle_destroy(device, HT_DEVICE);
+	handle_destroy(device);
 
 	return 0;
 }
 
 int decoder_create(int *decoder)
 {
-	decoder_ctx_t *dec = calloc(1, sizeof(decoder_ctx_t));
+	decoder_ctx_t *dec = handle_create(sizeof(decoder_ctx_t *), decoder);
+
 	if (!dec)
 		goto err;
 
 	dec->decoder = 5;
-
-	int handle = handle_create(dec, HT_DECODER);
-	if (handle == -1)
-	{
-		free(dec);
-		goto err;
-	}
-
-	*decoder = handle;
 
 	return 0;
 err:
@@ -81,11 +65,11 @@ err:
 
 int decoder_destroy(int decoder)
 {
-	decoder_ctx_t *dec = handle_get(decoder, HT_DECODER);
+	decoder_ctx_t *dec = handle_get(decoder);
 	if (!dec)
 		return 1;
 
-	handle_destroy(decoder, HT_DECODER);
+	handle_destroy(decoder);
 
 	return 0;
 }
@@ -93,92 +77,91 @@ int decoder_destroy(int decoder)
 
 int decoder_print(int decoder)
 {
-	decoder_ctx_t *dec = handle_get(decoder, HT_DECODER);
+	decoder_ctx_t *dec = handle_get(decoder);
 	if (!dec)
 		return 1;
 
 	printf("Decoder: %d\n", dec->decoder);
 
-	handle_put(decoder, HT_DECODER);
+	handle_put(decoder);
 
 	return 0;
 }
 
 int decoder_inc(int decoder)
 {
-	decoder_ctx_t *dec = handle_get(decoder, HT_DECODER);
+	decoder_ctx_t *dec = handle_get(decoder);
 	if (!dec)
 		return 1;
 
 	dec->decoder++;
 
-	handle_put(decoder, HT_DECODER);
-
-	return 0;
-}
-
-int decoder_inc2(int decoder)
-{
-	decoder_ctx_t *dec = handle_get(decoder, HT_DECODER);
-	if (!dec)
-		return 1;
-
-	dec->decoder++;
-
-	/* make it buggy */
-//	handle_put(decoder, HT_DECODER);
+	handle_put(decoder);
 
 	return 0;
 }
 
 int decoder_dec(int decoder)
 {
-	decoder_ctx_t *dec = handle_get(decoder, HT_DECODER);
+	decoder_ctx_t *dec = handle_get(decoder);
 	if (!dec)
 		return 1;
 
 	dec->decoder--;
 
-	handle_put(decoder, HT_DECODER);
+	handle_put(decoder);
 
 	return 0;
 }
 
 int device_print(int device)
 {
-	device_ctx_t *dev = handle_get(device, HT_DEVICE);
+	device_ctx_t *dev = handle_get(device);
 	if (!dev)
 		return 1;
 
 	printf("Device: %d\n", dev->device);
 
-	handle_put(device, HT_DEVICE);
+	handle_put(device);
 
 	return 0;
 }
 
 int device_inc(int device)
 {
-	device_ctx_t *dev = handle_get(device, HT_DEVICE);
+	device_ctx_t *dev = handle_get(device);
 	if (!dev)
 		return 1;
 
 	dev->device++;
 
-	handle_put(device, HT_DEVICE);
+	handle_put(device);
+
+	return 0;
+}
+
+int device_inc2(int device)
+{
+	device_ctx_t *dev = handle_get(device);
+	if (!dev)
+		return 1;
+
+	dev->device++;
+
+//	handle_put(device);
 
 	return 0;
 }
 
 int device_dec(int device)
 {
-	device_ctx_t *dev = handle_get(device, HT_DEVICE);
+	device_ctx_t *dev = handle_get(device);
 	if (!dev)
 		return 1;
 
 	dev->device--;
 
-	handle_put(device, HT_DEVICE);
+	handle_put(device);
 
 	return 0;
 }
@@ -196,23 +179,23 @@ int main()
 	device_print(device2);
 
 	device_inc(device);
+	device_print(device);
 	device_inc(device);
-	device_inc(device);
-	device_inc(device);
+	device_print(device);
+//	device_inc(device);
+//	device_print(device);
+//	device_inc(device);
 	decoder_inc(decoder);
 	device_inc(device2);
+	device_inc2(device2);
 
-	device_print(device);
+//	device_print(device);
 	decoder_print(decoder);
-	device_print(device2);
+//	device_print(device2);
 
 	device_destroy(device);
-
-	decoder_inc(decoder);
-	decoder_print(decoder);
-	decoder_inc2(decoder);
-	decoder_print(decoder);
 	decoder_destroy(decoder);
+	decoder_destroy(device2);
 
 	return 0;
 }
