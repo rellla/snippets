@@ -47,7 +47,7 @@ int device_create(int *device)
 	if (!dev)
 		goto err;
 
-	void *somedata = calloc(1, sizeof(somedata));
+	void *somedata = calloc(1, sizeof(somedata) * 10);
 
 	dev->device = 5;
 	dev->somedata = somedata;
@@ -71,12 +71,12 @@ int device_destroy(int device)
 
 int decoder_create(int *decoder)
 {
-	decoder_ctx_t *dec = handle_create(sizeof(decoder_ctx_t *), decoder, decoder_cb);
+	decoder_ctx_t *dec = handle_create(sizeof(*dec), decoder, decoder_cb);
 
 	if (!dec)
 		goto err;
 
-	void *somedata = calloc(1, sizeof(somedata));
+	void *somedata = calloc(1, sizeof(somedata) * 5);
 
 	dec->decoder = 5;
 	dec->somedata = somedata;
@@ -119,6 +119,7 @@ int decoder_inc(int decoder)
 		return 1;
 
 	dec->decoder++;
+	printf("Increase!\n");
 
 	handle_put(decoder);
 
@@ -158,6 +159,7 @@ int device_inc(int device)
 		return 1;
 
 	dev->device++;
+	printf("Increase!\n");
 
 	handle_put(device);
 
@@ -196,31 +198,31 @@ int main()
 	int device, device2, decoder;
 
 	device_create(&device);
-//	decoder_create(&decoder);
-//	device_create(&device2);
+	decoder_create(&decoder);
+	device_create(&device2);
 
 	device_print(device);
 //	decoder_print(decoder);
 //	device_print(device2);
 
 	device_inc(device);
-	device_print(device);
-//	device_inc(device);
 //	device_print(device);
 //	device_inc(device);
+//	device_print(device);
+	device_inc(device);
 //	device_print(device);
 //	device_inc(device);
 //	decoder_inc(decoder);
 //	device_inc(device2);
 //	device_inc2(device2);
 
-//	device_print(device);
+	device_print(device);
 //	decoder_print(decoder);
 //	device_print(device2);
 
 	device_destroy(device);
-//	decoder_destroy(decoder);
-//	decoder_destroy(device2);
+	decoder_destroy(decoder);
+	decoder_destroy(device2);
 
 	return 0;
 }
