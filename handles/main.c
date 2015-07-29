@@ -22,14 +22,31 @@
 #include <stdlib.h>
 #include "handles.h"
 
+void device_cb(void* param)
+{
+	device_ctx_t *dev = (device_ctx_t *)param;
+	printf("Callback function!\n");
+	dev->device = 0;
+	free(dev->somedata);
+	printf("Device: %d\n", dev->device);
+}
+
+void decoder_cb(void* dec)
+{
+	printf("Callback function!");
+}
+
 int device_create(int *device)
 {
-	device_ctx_t *dev = handle_create(sizeof(*dev), device);
+	device_ctx_t *dev = handle_create(sizeof(*dev), device, device_cb);
 
 	if (!dev)
 		goto err;
 
+	void *somedata = calloc(1, sizeof(somedata));
+
 	dev->device = 5;
+	dev->somedata = somedata;
 
 	return 0;
 err:
@@ -50,7 +67,7 @@ int device_destroy(int device)
 
 int decoder_create(int *decoder)
 {
-	decoder_ctx_t *dec = handle_create(sizeof(decoder_ctx_t *), decoder);
+	decoder_ctx_t *dec = handle_create(sizeof(decoder_ctx_t *), decoder, *decoder_cb);
 
 	if (!dec)
 		goto err;
@@ -166,36 +183,37 @@ int device_dec(int device)
 	return 0;
 }
 
+
 int main()
 {
 	int device, device2, decoder;
 
 	device_create(&device);
-	decoder_create(&decoder);
-	device_create(&device2);
+//	decoder_create(&decoder);
+//	device_create(&device2);
 
 	device_print(device);
-	decoder_print(decoder);
-	device_print(device2);
+//	decoder_print(decoder);
+//	device_print(device2);
 
-	device_inc(device);
-	device_print(device);
 	device_inc(device);
 	device_print(device);
 //	device_inc(device);
 //	device_print(device);
 //	device_inc(device);
-	decoder_inc(decoder);
-	device_inc(device2);
-	device_inc2(device2);
+//	device_print(device);
+//	device_inc(device);
+//	decoder_inc(decoder);
+//	device_inc(device2);
+//	device_inc2(device2);
 
 //	device_print(device);
-	decoder_print(decoder);
+//	decoder_print(decoder);
 //	device_print(device2);
 
 	device_destroy(device);
-	decoder_destroy(decoder);
-	decoder_destroy(device2);
+//	decoder_destroy(decoder);
+//	decoder_destroy(device2);
 
 	return 0;
 }

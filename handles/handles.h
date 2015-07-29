@@ -12,6 +12,7 @@ enum {
 typedef struct
 {
 	int device;
+	void *somedata;
 } device_ctx_t;
 
 typedef struct
@@ -19,7 +20,9 @@ typedef struct
 	int decoder;
 } decoder_ctx_t;
 
-void *handle_create(size_t size, int *handle);
+typedef void (*callback)(void*);
+
+void *handle_create(size_t size, int *handle, void(*callback)(void*));
 void *handle_get(int handle);
 int handle_put(int handle);
 int handle_destroy(int handle);

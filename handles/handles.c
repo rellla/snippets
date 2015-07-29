@@ -27,6 +27,7 @@
 typedef struct{
 	unsigned int refcount;
 	void **handledata;
+	callback cb_func;
 } dataobject;
 
 static struct
@@ -35,7 +36,7 @@ static struct
 	int size;
 } ht;
 
-void *handle_create(size_t size, int *handle)
+void *handle_create(size_t size, int *handle, void(*callback)(void*))
 {
 	*handle = INVALID_HANDLE;
 
@@ -66,6 +67,7 @@ void *handle_create(size_t size, int *handle)
 
 	data->refcount = 1;
 	data->handledata = h_data;
+	data->cb_func = callback;
 
 	ht.data[index] = data;
 	*handle = index + 1;
@@ -134,6 +136,7 @@ int handle_destroy(int handle)
 
 		printf("[DESTROY] Handle: %d, Data %x, HTData %x, Ref %d\n", index, data->handledata, ht.data[index], data->refcount);
 		if (data->refcount == 0) {
+			data->cb_func(data->handledata);
 			free(data->handledata);
 			free(data);
 		}
