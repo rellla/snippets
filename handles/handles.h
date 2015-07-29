@@ -3,12 +3,6 @@
 
 #define INVALID_HANDLE 0xffffffffU
 
-enum {
-	HT_DECODER	= 0,
-	HT_DEVICE	= 1,
-	HT_LENGTH,
-};
-
 typedef struct
 {
 	int device;
@@ -18,6 +12,7 @@ typedef struct
 typedef struct
 {
 	int decoder;
+	void *somedata;
 } decoder_ctx_t;
 
 typedef void (*callback)(void*);

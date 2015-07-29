@@ -25,15 +25,19 @@
 void device_cb(void* param)
 {
 	device_ctx_t *dev = (device_ctx_t *)param;
-	printf("Callback function!\n");
+	printf("Callback function! Set device = 0 and free private data\n");
 	dev->device = 0;
 	free(dev->somedata);
 	printf("Device: %d\n", dev->device);
 }
 
-void decoder_cb(void* dec)
+void decoder_cb(void* param)
 {
-	printf("Callback function!");
+	decoder_ctx_t *dec = (decoder_ctx_t *)param;
+	printf("Callback function! Set decoder = 0 and free private data\n");
+	dec->decoder = 0;
+	free(dec->somedata);
+	printf("Decoder: %d\n", dec->decoder);
 }
 
 int device_create(int *device)
@@ -67,12 +71,15 @@ int device_destroy(int device)
 
 int decoder_create(int *decoder)
 {
-	decoder_ctx_t *dec = handle_create(sizeof(decoder_ctx_t *), decoder, *decoder_cb);
+	decoder_ctx_t *dec = handle_create(sizeof(decoder_ctx_t *), decoder, decoder_cb);
 
 	if (!dec)
 		goto err;
 
+	void *somedata = calloc(1, sizeof(somedata));
+
 	dec->decoder = 5;
+	dec->somedata = somedata;
 
 	return 0;
 err:

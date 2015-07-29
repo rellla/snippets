@@ -111,6 +111,7 @@ int handle_put(int handle)
 
 		printf("[PUT] Handle: %d, Data %x, HTData %x, Ref %d\n", index, data->handledata, ht.data[index], data->refcount);
 		if (data->refcount == 0) {
+			data->cb_func(data->handledata);
 			free(data->handledata);
 			free(data);
 		}
@@ -132,18 +133,8 @@ int handle_destroy(int handle)
 	if (index < ht.size) {
 		data = ht.data[index];
 		data->refcount--;
-		data->refcount--;
-
 		printf("[DESTROY] Handle: %d, Data %x, HTData %x, Ref %d\n", index, data->handledata, ht.data[index], data->refcount);
-		if (data->refcount == 0) {
-			data->cb_func(data->handledata);
-			free(data->handledata);
-			free(data);
-		}
-		else
-			printf("[DESTROY] Cannot destoy, we have %d references\n", data->refcount);
-
-		return 0;
+		return handle_put(handle);
 	}
 
 	return 1;
