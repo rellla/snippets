@@ -1,0 +1,1330 @@
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] VDR version 2.2.0 started
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] switched to user 'root'
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] codeset is 'UTF-8' - known
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] found 28 locales in /usr/local/share/locale
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading plugin: /usr/local/lib/vdr/libvdr-softhddevice.so.2.2.0
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading plugin: /usr/local/lib/vdr/libvdr-streamdev-client.so.2.2.0
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading plugin: /usr/local/lib/vdr/libvdr-remoteosd.so.2.2.0
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/setup.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/sources.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/diseqc.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/scr.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/channels.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/timers.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/svdrphosts.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/remote.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/keymacros.conf
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1309] video directory scanner thread started (pid=1308, tid=1309, prio=high)
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] registered source parameters for 'A - ATSC'
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] registered source parameters for 'C - DVB-C'
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] registered source parameters for 'S - DVB-S'
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] registered source parameters for 'T - DVB-T'
+Aug 18 20:01:19 Cubieboard2 vdr[1308]: [1308] no DVB device found
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] initializing plugin: softhddevice (0.6.1rc1-GITa3231de): Ein Software und GPU emulieres HD-Gerät
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] new device number 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] initializing plugin: streamdev-client (0.6.1-git): VTP Streaming Client
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] new device number 2
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] cTimeMs: not using monotonic clock - resolution is too bad (0 s 10000000 ns)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] streamdev-client: got device number 2
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] new device number 3
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] streamdev-client: got device number 3
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1311] epg data reader thread started (pid=1308, tid=1311, prio=high)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1311] reading EPG data from /video0/epg.data
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] initializing plugin: remoteosd (1.0.0): Zugriff auf Menü eines anderen VDR
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] setting primary device to 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]MakePrimaryDevice: 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsdProvider:
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoFormat: 0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVolumeDevice: 255
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] assuming manual start of VDR
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] SVDRP listening on port 6419
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] skin "simplex" not available - using "lcars" instead
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/themes/lcars-default.theme
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] starting plugin: softhddevice
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio: 'alsa' output module used
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1310] video directory scanner thread started (pid=1308, tid=1310, prio=high)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1313] device 3 section handler thread started (pid=1308, tid=1313, prio=low)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1312] device 2 section handler thread started (pid=1308, tid=1312, prio=low)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1309] video directory scanner thread ended (pid=1308, tid=1309)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1310] video directory scanner thread ended (pid=1308, tid=1310)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: supports pause: no
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: mixer default - PCM open
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: buffer size 5512 124ms, period size 2756 62ms
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: buffer size 5512 124ms, period size 2756 62ms
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: buffer size 24000 125ms, period size 12000 62ms
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: buffer size 24000 125ms, period size 12000 62ms
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio:  44100Hz supports 1 2 2 2 2 2 2 2 channels
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio:  48000Hz supports 1 2 2 2 2 2 2 2 channels
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio: 192000Hz supports 1 2 2 2 2 2 2 2 channels
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio: play thread started
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video: visual 0x21 depth 24
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video: window prepared
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: VDPAU API version: 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: VDPAU information: sunxi VDPAU Driver
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: high quality scaling unsupported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: feature deinterlace temporal supported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: feature deinterlace temporal spatial unsupported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: attribute skip chroma deinterlace unsupported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: 4:2:0 chroma format with 8192x8192 supported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: doesn't support yuvy video surface
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: 8bit BGRA format with 8192x8192 supported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: 8bit RGBA format with 8192x8192 supported
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: created output surface 1920x1080 with id 0x00000004
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: created output surface 1920x1080 with id 0x00000005
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: created output surface 1920x1080 with id 0x00000006
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: created output surface 1920x1080 with id 0x00000007
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: created grab render output surface 1920x1080 with id 0x00000008
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video: screen saver extension present
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video: dpms extension present
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: osd surfaces created
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [softhddev] ready
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] starting plugin: streamdev-client
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] starting plugin: remoteosd
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] skin "simplex" not available - using "lcars" instead
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] loading /etc/vdr/themes/lcars-default.theme
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] remote control LIRC - keys known
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] remote control KBD - keys known
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] switching to channel 2 (ZDF)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1317] KBD remote control thread started (pid=1308, tid=1317, prio=high)
+Aug 18 20:01:20 Cubieboard2 lircd-0.9.0-pre1[502]: accepted new client on /var/run/lirc/lircd
+Aug 18 20:01:20 Cubieboard2 lircd-0.9.0-pre1[502]: initializing '/dev/input/sunxi-ir'
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] streamdev-client: Connected to server 192.168.241.200:2004 using protocol version 1.0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1316] LIRC remote control thread started (pid=1308, tid=1316, prio=high)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] streamdev-client: Connected to server 192.168.241.200:2004 using protocol version 1.0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVolumeDevice: 255
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] setting watchdog timer to 120 seconds
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video: set trick-speed 0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: audio: not paused, check the code
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [softhddev]GetOsdSize: 1920x1080 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1318] device 2 receiver thread started (pid=1308, tid=1318, prio=high)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video: display thread started
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/event: MapNotify
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] OSD size changed to 1920x1080 @ 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1311] epg data reader thread ended (pid=1308, tid=1311)
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1664x372+0+0*6656 -> +154+621 0xa2ea3008
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1664x372+154+621 6ms 2476032
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: [1320] device 2 TS buffer thread started (pid=1308, tid=1320, prio=high)
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: [1308] max. latency time 1 seconds
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 371x39+0+0*1484 -> +1037+954 0x1cadc90
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video/vdpau: osd upload 371x39+1037+954 0ms 57876
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video: mpeg2 detected ID 17
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video: max used PES packet size: 34521
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: pesdemux: pes start code id 0xc0
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: pesdemux: new codec 000000 -> 0x15000
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: using audio codec (null) or ID 0x15000
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: using video codec mpegvideo_vdpau or ID 0x0002
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: vdpau decoder found
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: video mpeg hack active
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: video ''
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: video can use truncated packets
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: can use own buffer management
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: can export data for HW decoding (VDPAU)
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: audio ''
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec/audio: format change s16p 48000Hz *2 channels
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: setup channels 2 frequency 48000Hz
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: 1 ring buffer prepared
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: next ring buffer
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: thread channels 2 frequency 48000Hz
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec/audio: resample s16p 48000Hz *2 -> s16 48000Hz *2
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: a/v packet size 4608 bytes
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video: max used PES packet size: 56913
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 120ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio/alsa: start delay 336ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: a/v next buf(0, 216ms)
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video: max used PES packet size: 65507
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video: max used PES packet size: 90723
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: audio: start?  384ms skip 0ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video: ready --:--:--.---  0ms/frame 981747ms
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: Vdpau_get_format: codec 2 fmts:
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: 0x00000010 xvmcidct
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:01:21 Cubieboard2 vdr[1308]: video/vdpau: profile 2 with level 3, macro blocks 32400, width 3840, height 2160 supported
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: create decoder profile=2 720x576 #3 refs
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: VdpauCreateSurfaces: 720x576 * 8
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: temporal deinterlace enabled
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: background color 0,000000/0,000000/0,000000/0,000000
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: color space ITU-R BT.601
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: aspect 18304:10287
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: aspect output 1920x1080+0+0
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  408ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  432ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  456ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  480ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  504ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  528ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  552ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: start?  576ms skip 0ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: new stream frame 981860ms
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: a/v sync buf(0, 576ms) 17:40:39.407|17:40:39.430 = -22ms ready
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: interlaced 1 top-field-first 1
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: audio: ----> 576ms start
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 6
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.367 +418  560   0/\ms   0+4 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 7
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.367 +398  540   0/\ms   0+4 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 8
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.367 +378  520   0/\ms   0+4 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 9
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.367 +358  500   0/\ms   0+4 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 10
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.367 +338  480   0/\ms   0+4 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 20
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.367 +118  452   0/\ms   4+8 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: initial slow down video, frame 24
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.387 +176  586   0/\ms   7+7 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video: 17:40:39.407  +58  448   0/\ms   6+8 v-buf
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:22 Cubieboard2 vdr[1308]: video/vdpau: synced after 28 frames 982316ms
+Aug 18 20:01:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:24 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:24 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:25 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:01:25 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:01:25 Cubieboard2 vdr[1308]: video: 17:40:42.447  -31  438   0/\ms   8+6 v-buf
+Aug 18 20:01:25 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:25 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:26 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:01:26 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:01:26 Cubieboard2 vdr[1308]: video/vdpau: osd clear dirty 1664x372+154+621
+Aug 18 20:01:28 Cubieboard2 vdr[1308]: video: max used PES packet size: 94484
+Aug 18 20:01:32 Cubieboard2 vdr[1308]: codec/audio: drift(     0) -8329ms reset
+Aug 18 20:01:32 Cubieboard2 vdr[1308]: codec/audio: drift(     0) -8329900us     0
+Aug 18 20:01:32 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 296ms
+Aug 18 20:01:33 Cubieboard2 vdr[1308]: video: max used PES packet size: 108394
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] switching to channel 1 (Das Erste)
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio/alsa: flush state RUNNING
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio/alsa: start delay 336ms
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: audio flush 3ms
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [softhddev]Clear: 0ms buffers 0
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: set closing
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: new stream start
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video/vdpau: closing eof
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: decoder buffer empty, duping frame (5/856) 0 v-buf
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video: --:--:--.---   +0    0   0/\ms   0-1 v-buf
+Aug 18 20:01:39 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1318] cStreamDevice::GetTSPacket: GetChecked: NOTHING (0)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1320] ERROR (device.c,1767): Ungültiger Dateideskriptor
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1320] device 2 TS buffer thread ended (pid=1308, tid=1320)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1318] buffer stats: 209996 (10%) used
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1318] device 2 receiver thread ended (pid=1308, tid=1318)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1327] device 2 receiver thread started (pid=1308, tid=1327, prio=high)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1664x372+0+0*6656 -> +154+621 0xa27c2008
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1664x372+154+621 5ms 2476032
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 1
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: video: set trick-speed 0
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: not paused, check the code
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1308] max. latency time 2 seconds
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1328] device 2 TS buffer thread started (pid=1308, tid=1328, prio=high)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1020x120+0+0*4080 -> +388+873 0xa3088008
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1020x120+388+873 4ms 489600
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio/alsa: flush state PREPARED
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio/alsa: start delay 336ms
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: audio flush 1ms
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: pesdemux: pes start code id 0xc0
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: video: new stream 1302ms
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: video: possible stream change loss
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: video: mpeg2 detected ID da
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: pesdemux: new codec 000000 -> 0x15000
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: using audio codec (null) or ID 0x15000
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: using video codec mpegvideo_vdpau or ID 0x0002
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: audio ''
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: vdpau decoder found
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec/audio: format change s16p 48000Hz *2 channels
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: setup channels 2 frequency 48000Hz
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: 1 ring buffer prepared
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec/audio: resample s16p 48000Hz *2 -> s16 48000Hz *2
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: next ring buffer
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: a/v packet size 4608 bytes
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: video mpeg hack active
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: audio: thread channels 2 frequency 48000Hz
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [softhddev] empty video packet 3699 bytes
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: video ''
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 186ms
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: video can use truncated packets
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: [softhddev] empty video packet 1811 bytes
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: can use own buffer management
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: can export data for HW decoding (VDPAU)
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:40 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: ready --:--:--.---  0ms/frame 1611ms
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: Vdpau_get_format: codec 2 fmts:
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: 0x00000010 xvmcidct
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: profile 2 with level 3, macro blocks 32400, width 3840, height 2160 supported
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: create decoder profile=2 720x576 #3 refs
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: VdpauDestroySurfaces
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: VdpauCreateSurfaces: 720x576 * 8
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: temporal deinterlace enabled
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: background color 0,000000/0,000000/0,000000/0,000000
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: color space ITU-R BT.601
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: aspect 18304:10287
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: aspect output 1920x1080+0+0
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: [softhddev] empty video packet 2387 bytes
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: new stream frame 1724ms
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: audio: a/v sync buf(0, 157ms)  9:28:54.938| 9:28:54.810 = 128ms running
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: initial slow down video, frame 6
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video:  9:28:54.918 +207  304   0/\ms   2+3 v-buf
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: synced after 11 frames 1834ms
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: 1001086747 display time 1749867
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: initial slow down video, frame 10
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video/vdpau: missed frame (1/10)
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: video:  9:28:54.938 +104  277   0/\ms   2+8 v-buf
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:41 Cubieboard2 vdr[1308]: [softhddev] empty video packet 355 bytes
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: [softhddev] empty video packet 2987 bytes
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?   24ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?   48ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?   72ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?   96ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  120ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  144ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  168ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: [softhddev] empty video packet 17491 bytes
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  192ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  216ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  240ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  264ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio: ----> 360ms start
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: audio/alsa: writei underrun error? 'Datenübergabe unterbrochen (broken pipe)'
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: [softhddev] empty video packet 1747 bytes
+Aug 18 20:01:42 Cubieboard2 vdr[1308]: [softhddev] empty video packet 12763 bytes
+Aug 18 20:01:43 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:43 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:01:43 Cubieboard2 vdr[1308]: [softhddev] empty video packet 1139 bytes
+Aug 18 20:01:44 Cubieboard2 vdr[1308]: [softhddev] empty video packet 35 bytes
+Aug 18 20:01:44 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:01:44 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:01:44 Cubieboard2 vdr[1308]: video/vdpau: osd clear dirty 1664x372+154+621
+Aug 18 20:01:46 Cubieboard2 vdr[1308]: video: max used PES packet size: 109464
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?   24ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?   48ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?   72ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?   96ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  120ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  144ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  168ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  192ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  216ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  240ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: [softhddev] empty video packet 8843 bytes
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  264ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio: ----> 360ms start
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: audio/alsa: writei underrun error? 'Datenübergabe unterbrochen (broken pipe)'
+Aug 18 20:01:49 Cubieboard2 vdr[1308]: [softhddev] empty video packet 4995 bytes
+Aug 18 20:01:50 Cubieboard2 vdr[1308]: [softhddev] empty video packet 5283 bytes
+Aug 18 20:01:50 Cubieboard2 vdr[1308]: [softhddev] empty video packet 835 bytes
+Aug 18 20:01:50 Cubieboard2 vdr[1308]: [softhddev] empty video packet 675 bytes
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: video: max used PES packet size: 120112
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: codec/audio: drift(     0) -8340ms reset
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 284ms
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: [softhddev] empty video packet 155 bytes
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: video: max used PES packet size: 120832
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:01:51 Cubieboard2 vdr[1308]: video:  9:29:04.918  -26  314   0/\ms   6+5 v-buf
+Aug 18 20:01:53 Cubieboard2 vdr[1308]: [softhddev] empty video packet 14763 bytes
+Aug 18 20:01:53 Cubieboard2 vdr[1308]: [softhddev] empty video packet 4547 bytes
+Aug 18 20:02:01 Cubieboard2 vdr[1308]: codec/audio: drift(     0) -8589ms reset
+Aug 18 20:02:01 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 381ms
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] switching to channel 2 (ZDF)
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio/alsa: flush state RUNNING
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio: audio flush 5ms
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [softhddev]Clear: 0ms buffers 0
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: set closing
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: new stream start
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video/vdpau: closing eof
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: decoder buffer empty, duping frame (22/1242) 0 v-buf
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video: --:--:--.---   +0    0   0/\ms   0-1 v-buf
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:06 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1327] cStreamDevice::GetTSPacket: GetChecked: NOTHING (0)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1328] ERROR (device.c,1767): Ungültiger Dateideskriptor
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1328] device 2 TS buffer thread ended (pid=1308, tid=1328)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1327] buffer stats: 241556 (11%) used
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1327] device 2 receiver thread ended (pid=1308, tid=1327)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1335] device 2 receiver thread started (pid=1308, tid=1335, prio=high)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1336] device 2 TS buffer thread started (pid=1308, tid=1336, prio=high)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1664x372+0+0*6656 -> +154+621 0xa27c2008
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1664x372+154+621 6ms 2476032
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 1
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: video: set trick-speed 0
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: not paused, check the code
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1020x120+0+0*4080 -> +388+873 0x1ccb4b0
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1020x120+388+873 10ms 489600
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio/alsa: flush state PREPARED
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: audio flush 1ms
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: pesdemux: pes start code id 0xc0
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: video: new stream 1460ms
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: video: possible stream change loss
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: video: mpeg2 detected ID 17
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: pesdemux: new codec 000000 -> 0x15000
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: using audio codec (null) or ID 0x15000
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: audio ''
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec/audio: format change s16p 48000Hz *2 channels
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: setup channels 2 frequency 48000Hz
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: 1 ring buffer prepared
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec/audio: resample s16p 48000Hz *2 -> s16 48000Hz *2
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: a/v packet size 4608 bytes
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: a/v next buf(1,   0ms)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: using video codec mpegvideo_vdpau or ID 0x0002
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: vdpau decoder found
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: video mpeg hack active
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: video ''
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: video can use truncated packets
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: can use own buffer management
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: can export data for HW decoding (VDPAU)
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:07 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  264ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: ready --:--:--.---  0ms/frame 1590ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: Vdpau_get_format: codec 2 fmts:
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: 0x00000010 xvmcidct
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: profile 2 with level 3, macro blocks 32400, width 3840, height 2160 supported
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: create decoder profile=2 720x576 #3 refs
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: VdpauDestroySurfaces
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: VdpauCreateSurfaces: 720x576 * 8
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: temporal deinterlace enabled
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: background color 0,000000/0,000000/0,000000/0,000000
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: color space ITU-R BT.601
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: aspect 18304:10287
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: aspect output 1920x1080+0+0
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  384ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  408ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  432ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  456ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: new stream frame 1703ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: a/v sync buf(1, 456ms) 17:41:25.487|17:41:25.309 = 177ms ready
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 6
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   0+3 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 7
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   0+3 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 8
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   0+3 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 9
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   0+3 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 10
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   0+3 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  480ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  504ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  528ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  552ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 11
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   3+3 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  576ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  600ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  624ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  648ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: 1028056961 display time 1829980
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 16
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video/vdpau: missed frame (2/8)
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: initial slow down video, frame 17
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: video: 17:41:25.467+8888    0   0/\ms   4+7 v-buf
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  672ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  696ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  720ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  744ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  768ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  792ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  816ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  840ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  864ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  888ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  912ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  936ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  960ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start?  984ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: start? 1008ms skip 0ms
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: ----> 1056ms start
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: next ring buffer
+Aug 18 20:02:08 Cubieboard2 vdr[1308]: audio: thread channels 2 frequency 48000Hz
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 946ms
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: video/vdpau: synced after 59 frames 2770ms
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: video: initial slow down video, frame 58
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: video: 17:41:25.487 +100 1041   0/\ms  18+8 v-buf
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:09 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:10 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:10 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:11 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:11 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:11 Cubieboard2 vdr[1308]: video/vdpau: osd clear dirty 1664x372+154+621
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video: 17:41:32.967  -29 1063   0/\ms  23+6 v-buf
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1664x372+0+0*6656 -> +154+621 0xa27c2008
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1664x372+154+621 8ms 2476032
+Aug 18 20:02:16 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: video/vdpau: 1036747049 display time 39828
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: video/vdpau: missed frame (3/396)
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: video: 17:41:33.207  -30 1015   0/\ms  23+6 v-buf
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 9ms 1903944
+Aug 18 20:02:17 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:18 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:18 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:18 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 7ms 1903944
+Aug 18 20:02:18 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: codec/audio: drift(     0) -8526ms reset
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 1091ms
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 4ms 1903944
+Aug 18 20:02:19 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:20 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 4ms 1903944
+Aug 18 20:02:20 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 6ms 1903944
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: video/vdpau: 1041307094 display time 40057
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: video/vdpau: missed frame (4/624)
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:21 Cubieboard2 vdr[1308]: video: 17:41:37.767  -19  977   0/\ms  22+6 v-buf
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 5ms 1903944
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 4ms 1903944
+Aug 18 20:02:22 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 5ms 1903944
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa284e008
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 5ms 1903944
+Aug 18 20:02:23 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:24 Cubieboard2 vdr[1308]: [1308] switching to channel 65 (Das Erste HD)
+Aug 18 20:02:24 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 0
+Aug 18 20:02:24 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:24 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:24 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio/alsa: flush state RUNNING
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio: audio flush 5ms
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: [softhddev]Clear: 0ms buffers 0
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: set closing
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: new stream start
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video/vdpau: closing eof
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: decoder buffer empty, duping frame (26/792) 0 v-buf
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video: --:--:--.---   +0    0   0/\ms   0-1 v-buf
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:25 Cubieboard2 vdr[1308]: [1335] cStreamDevice::GetTSPacket: GetChecked: NOTHING (0)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1336] ERROR (device.c,1767): Ungültiger Dateideskriptor
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1336] device 2 TS buffer thread ended (pid=1308, tid=1336)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1335] buffer stats: 238384 (11%) used
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1335] device 2 receiver thread ended (pid=1308, tid=1335)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1341] device 2 receiver thread started (pid=1308, tid=1341, prio=high)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x372+0+0*6476 -> +154+621 0xa29d3008
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x372+154+621 6ms 2409072
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 1
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: set trick-speed 0
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: not paused, check the code
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1342] device 2 TS buffer thread started (pid=1308, tid=1342, prio=high)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1020x120+0+0*4080 -> +388+873 0x1ccb4b0
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1020x120+388+873 1ms 489600
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio/alsa: flush state PREPARED
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: audio flush 1ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: pesdemux: pes start code id 0xc0
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: new stream 1450ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: possible stream change loss
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: h264 detected
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: pesdemux: new codec 000000 -> 0x15000
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: using audio codec (null) or ID 0x15000
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: audio ''
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec/audio: format change s16p 48000Hz *2 channels
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: setup channels 2 frequency 48000Hz
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: 1 ring buffer prepared
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec/audio: resample s16p 48000Hz *2 -> s16 48000Hz *2
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: a/v packet size 4608 bytes
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: using video codec h264_vdpau or ID 0x001c
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: vdpau decoder found
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: video mpeg hack active
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: video ''
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: can use own buffer management
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: can export data for HW decoding (VDPAU)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: a/v next buf(1,   0ms)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  264ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  384ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  408ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: max used PES packet size: 131021
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: max used PES packet size: 159706
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  432ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  456ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: ready --:--:--.---  0ms/frame 1704ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: Vdpau_get_format: codec 28 fmts:
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: 0x00000024 vdpau_h264
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: profile 7 with level 51, macro blocks 32400, width 3840, height 2160 supported
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: create decoder profile=7 1280x720 #16 refs
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: 0x00000024 vdpau_h264
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: VdpauDestroySurfaces
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: VdpauCreateSurfaces: 1280x720 * 21
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: temporal deinterlace disabled
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: background color 0,000000/0,000000/0,000000/0,000000
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: color space ITU-R BT.709
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: aspect 18304:10287
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: aspect output 1920x1080+0+0
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: new stream frame 1745ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: a/v sync buf(1, 456ms) 16:16:27.503|16:16:26.124 = 1379ms ready
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: sync advance 80ms 15504/87552
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: interlaced 0 top-field-first 0
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: initial slow down video, frame 1
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: 16:16:27.443+8888    0   0/\ms   3+1 v-buf
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  399ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: 1046551889 display time 1744731
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: initial slow down video, frame 5
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video/vdpau: missed frame (5/1)
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: initial slow down video, frame 6
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: video: 16:16:27.443+8888    0   0/\ms   0+1 v-buf
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  423ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  447ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  471ms skip 0ms
+Aug 18 20:02:26 Cubieboard2 vdr[1308]: audio: start?  495ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  519ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  543ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  567ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  591ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  615ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  639ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  663ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  687ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  711ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 239x15+0+0*956 -> +1166+975 0x1c2c2c8
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: video/vdpau: osd upload 239x15+1166+975 0ms 14340
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  735ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  759ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  783ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  807ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  831ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  855ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  879ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  903ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  927ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: video: max used PES packet size: 162980
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  951ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  975ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: start?  999ms skip 0ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: ----> 999ms start
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: next ring buffer
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: audio: thread channels 2 frequency 48000Hz
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 940ms
+Aug 18 20:02:27 Cubieboard2 vdr[1308]: video: max used PES packet size: 182050
+Aug 18 20:02:28 Cubieboard2 vdr[1308]: video: max used PES packet size: 195294
+Aug 18 20:02:28 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:28 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:28 Cubieboard2 vdr[1308]: video: initial slow down video, frame 99
+Aug 18 20:02:28 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:28 Cubieboard2 vdr[1308]: video: 16:16:27.443 +173  908   0/\ms  84+4 v-buf
+Aug 18 20:02:29 Cubieboard2 vdr[1308]: video/vdpau: synced after 112 frames 4020ms
+Aug 18 20:02:29 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:29 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 436x22+0+0*1744 -> +550+948 0x1c15358
+Aug 18 20:02:29 Cubieboard2 vdr[1308]: video/vdpau: osd upload 436x22+550+948 1ms 38368
+Aug 18 20:02:29 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:30 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:30 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:30 Cubieboard2 vdr[1308]: video: 16:16:28.583  -26 1076   0/\ms 104+1 v-buf
+Aug 18 20:02:30 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:30 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:30 Cubieboard2 vdr[1308]: video/vdpau: osd clear dirty 1664x372+154+621
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1664x372+0+0*6656 -> +154+621 0xa06be008
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1664x372+154+621 7ms 2476032
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video/vdpau: 1053377194 display time 40080
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:33 Cubieboard2 vdr[1308]: video/vdpau: missed frame (6/240)
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa074a008
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 4ms 1903944
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video: 16:16:32.663  -39 1019   0/\ms  98+1 v-buf
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video/vdpau: 1053997266 display time 40091
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video/vdpau: missed frame (7/271)
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa074a008
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 5ms 1903944
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:34 Cubieboard2 vdr[1308]: video: 16:16:33.263  -44 1015   0/\ms 102+1 v-buf
+Aug 18 20:02:35 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:35 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:35 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:35 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa074a008
+Aug 18 20:02:35 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 6ms 1903944
+Aug 18 20:02:35 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:36 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:36 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x294+0+0*6476 -> +154+621 0xa074a008
+Aug 18 20:02:36 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x294+154+621 5ms 1903944
+Aug 18 20:02:36 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1308] switching to channel 43 (n-tv)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 0
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio/alsa: flush state RUNNING
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: audio flush 4ms
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [softhddev]Clear: 0ms buffers 0
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: set closing
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: new stream start
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video/vdpau: closing eof
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: decoder buffer empty, duping frame (33/408) 0 v-buf
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video: --:--:--.---   +0    0   0/\ms   0-1 v-buf
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1341] cStreamDevice::GetTSPacket: GetChecked: NOTHING (0)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1342] device 2 TS buffer thread ended (pid=1308, tid=1342)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1341] buffer stats: 356484 (16%) used
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1341] device 2 receiver thread ended (pid=1308, tid=1341)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1346] device 2 receiver thread started (pid=1308, tid=1346, prio=high)
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1619x372+0+0*6476 -> +154+621 0xa06ce008
+Aug 18 20:02:37 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1619x372+154+621 7ms 2409072
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: [1347] device 2 TS buffer thread started (pid=1308, tid=1347, prio=high)
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 1
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: set trick-speed 0
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: not paused, check the code
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 371x39+0+0*1484 -> +1037+954 0x1c15358
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: osd upload 371x39+1037+954 0ms 57876
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio/alsa: flush state PREPARED
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: audio flush 1ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: pesdemux: pes start code id 0xc0
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: new stream 1206ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: possible stream change loss
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: mpeg2 detected ID 1f
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: pesdemux: new codec 000000 -> 0x15000
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: using audio codec (null) or ID 0x15000
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: audio ''
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec/audio: format change s16p 48000Hz *2 channels
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: setup channels 2 frequency 48000Hz
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: 1 ring buffer prepared
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec/audio: resample s16p 48000Hz *2 -> s16 48000Hz *2
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: a/v packet size 4608 bytes
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: using video codec mpegvideo_vdpau or ID 0x0002
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: vdpau decoder found
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: video mpeg hack active
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: video ''
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: video can use truncated packets
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: can use own buffer management
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: can export data for HW decoding (VDPAU)
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?   96ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  120ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  144ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  168ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  192ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  216ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  240ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  264ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  384ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  408ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  432ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  456ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  480ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  504ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  528ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  552ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  576ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  600ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  624ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  648ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  672ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: ready --:--:--.---  0ms/frame 1796ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: Vdpau_get_format: codec 2 fmts:
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: 0x00000010 xvmcidct
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: profile 2 with level 3, macro blocks 32400, width 3840, height 2160 supported
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: create decoder profile=2 720x576 #3 refs
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: VdpauDestroySurfaces
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: VdpauCreateSurfaces: 720x576 * 8
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: temporal deinterlace enabled
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: background color 0,000000/0,000000/0,000000/0,000000
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: color space ITU-R BT.601
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: aspect 18304:10287
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: aspect output 1920x1080+0+0
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: new stream frame 1829ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: a/v sync buf(1, 672ms)  8:21:45.671| 8:21:45.390 = 281ms ready
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: interlaced 1 top-field-first 1
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: initial slow down video, frame 2
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video:  8:21:45.631+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: initial slow down video, frame 3
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video:  8:21:45.631+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video: initial slow down video, frame 4
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: video:  8:21:45.631+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  696ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  720ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  744ms skip 0ms
+Aug 18 20:02:38 Cubieboard2 vdr[1308]: audio: start?  768ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video/vdpau: 1058777122 display time 1869876
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video: initial slow down video, frame 9
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video/vdpau: missed frame (8/8)
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video: initial slow down video, frame 10
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video:  8:21:45.631+8888    0   0/\ms   3+8 v-buf
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  792ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  816ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  840ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  864ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  888ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  912ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  936ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  960ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start?  984ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: start? 1008ms skip 0ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: ----> 1008ms start
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: next ring buffer
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: audio: thread channels 2 frequency 48000Hz
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 1007ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video/vdpau: synced after 53 frames 2866ms
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video: initial slow down video, frame 52
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:39 Cubieboard2 vdr[1308]: video:  8:21:45.651 +110 1127   0/\ms  27+7 v-buf
+Aug 18 20:02:40 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:40 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:41 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:41 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:42 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:42 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:42 Cubieboard2 vdr[1308]: video/vdpau: osd clear dirty 1664x372+154+621
+Aug 18 20:02:45 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:45 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:45 Cubieboard2 vdr[1308]: video:  8:21:50.771  -29  977   0/\ms  29+5 v-buf
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]CreateOsd: 154, 621, 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]cSoftOsd: 1664x907+154+621, 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 1 level 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetAreas: 1 areas
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video/vdpau: osd clear image
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] switching to channel 44 (N24)
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio/alsa: flush state RUNNING
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio: audio flush 6ms
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [softhddev]Clear: 0ms buffers 0
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: set closing
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: decoder buffer empty, duping frame (39/336) 0 v-buf
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: new stream start
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video: --:--:--.---   +0    0   0/\ms   0-1 v-buf
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video/vdpau: closing eof
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:46 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1346] cStreamDevice::GetTSPacket: GetChecked: NOTHING (0)
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1347] ERROR (device.c,1767): Ungültiger Dateideskriptor
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1347] device 2 TS buffer thread ended (pid=1308, tid=1347)
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1346] buffer stats: 98136 (4%) used
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1346] device 2 receiver thread ended (pid=1308, tid=1346)
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1350] device 2 receiver thread started (pid=1308, tid=1350, prio=high)
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1351] device 2 TS buffer thread started (pid=1308, tid=1351, prio=high)
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: draw 1664x372+0+0*6656 -> +154+621 0xa2607008
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: video/vdpau: osd upload 1664x372+154+621 5ms 2476032
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 1
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: video: set trick-speed 0
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: audio: not paused, check the code
+Aug 18 20:02:47 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio/alsa: flush state PREPARED
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: audio flush 1ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: pesdemux: new codec 000000 -> 0x15000
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: using audio codec (null) or ID 0x15000
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: ----> 0ms start
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: audio ''
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec/audio: format change s16p 48000Hz *2 channels
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: setup channels 2 frequency 48000Hz
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: 1 ring buffer prepared
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec/audio: resample s16p 48000Hz *2 -> s16 48000Hz *2
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: a/v packet size 4608 bytes
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: new stream 1464ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: possible stream change loss
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: mpeg2 detected ID 9f
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: pesdemux: pes start code id 0xc0
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: using video codec mpegvideo_vdpau or ID 0x0002
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: vdpau decoder found
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: video mpeg hack active
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: video ''
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: video can use truncated packets
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: can use own buffer management
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: can export data for HW decoding (VDPAU)
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: codec: bad video frame
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  192ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  216ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  240ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  264ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: ready --:--:--.---  0ms/frame 1590ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: Vdpau_get_format: codec 2 fmts:
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: 0x00000010 xvmcidct
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: profile 2 with level 3, macro blocks 32400, width 3840, height 2160 supported
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: create decoder profile=2 720x576 #3 refs
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: 0x00000026 vdpau_mpeg2
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: VdpauDestroySurfaces
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: VdpauCreateSurfaces: 720x576 * 8
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: temporal deinterlace enabled
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: background color 0,000000/0,000000/0,000000/0,000000
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: color space ITU-R BT.601
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: aspect 18304:10287
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: aspect output 1920x1080+0+0
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: new stream frame 1607ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: a/v sync buf(1, 264ms) 25:30:28.522|25:30:27.758 = 763ms ready
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 1
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: 25:30:28.482+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 2
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: 25:30:28.482+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 3
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: 25:30:28.482+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 4
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: 25:30:28.482+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 5
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: 25:30:28.482+8888    0   0/\ms   0+2 v-buf
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  288ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  312ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  336ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  360ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  384ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  408ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  432ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  456ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  480ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: 1068197165 display time 1729935
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 10
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video/vdpau: missed frame (9/8)
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: initial slow down video, frame 11
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: video: 25:30:28.482+8888    0   0/\ms   3+8 v-buf
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  504ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  528ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  552ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  576ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  600ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  624ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  648ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  672ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  696ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  720ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  744ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  768ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  792ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  816ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  840ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  864ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  888ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  912ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  936ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  960ms skip 0ms
+Aug 18 20:02:48 Cubieboard2 vdr[1308]: audio: start?  984ms skip 0ms
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: audio: start? 1008ms skip 0ms
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: audio: ----> 1008ms start
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: audio: next ring buffer
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: audio: thread channels 2 frequency 48000Hz
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 1027ms
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: video/vdpau: synced after 80 frames 3220ms
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: video: initial slow down video, frame 79
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: video: 25:30:28.502 +112  992   0/\ms  36+7 v-buf
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:49 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:51 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:51 Cubieboard2 vdr[1308]: [1308] [softhddev]Flush: level 0 active 1
+Aug 18 20:02:52 Cubieboard2 vdr[1308]: [1308] [softhddev]~cSoftOsd: level 0
+Aug 18 20:02:52 Cubieboard2 vdr[1308]: [1308] [softhddev]SetActive: 0 level 0
+Aug 18 20:02:52 Cubieboard2 vdr[1308]: video/vdpau: osd clear dirty 1664x372+154+621
+Aug 18 20:02:53 Cubieboard2 vdr[1308]: video: slow down video, duping frame
+Aug 18 20:02:53 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:02:53 Cubieboard2 vdr[1308]: video: 25:30:31.962  -27 1016   0/\ms  37+6 v-buf
+Aug 18 20:02:59 Cubieboard2 vdr[1308]: codec/audio: drift(     0) -8589ms reset
+Aug 18 20:02:59 Cubieboard2 vdr[1308]: codec/audio: inital drift delay 1024ms
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] stopping plugin: remoteosd
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] stopping plugin: streamdev-client
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] stopping plugin: softhddevice
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: max used PES packet size: 195294
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] [softhddev]SetPlayMode: 0
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio: reset video ready
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio: flush 1 ring buffer(s)
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio/alsa: flush state RUNNING
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio/alsa: using device 'sunxihdmi'
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio: audio flush 1ms
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio/alsa: buffer size 6000 125ms, period size 3000 62ms
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio/alsa: state PREPARED
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio/alsa: start delay 999ms
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio: a/v next buf(0,   0ms)
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio: break after flush
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: audio: wait on start condition
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [softhddev]Clear: 1ms buffers 0
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: set closing
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: reset start
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: set clock --:--:--.---
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: new stream start
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] [softhddev]SetVideoDisplayFormat: 1
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] [softhddev]GetSpuDecoder:
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video/vdpau: closing eof
+Aug 18 20:03:05 Cubieboard2 lircd-0.9.0-pre1[502]: removed client
+Aug 18 20:03:05 Cubieboard2 lircd-0.9.0-pre1[502]: closing '/dev/input/sunxi-ir'
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1317] KBD remote control thread ended (pid=1308, tid=1317)
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: speed up video, droping frame
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: decoder buffer empty, duping frame (44/764) 0 v-buf
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video: --:--:--.---   +0    0   0/\ms   0-1 v-buf
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1308] saved setup to /etc/vdr/setup.conf
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: video/vdpau: black surface displayed
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1351] ERROR (device.c,1767): Ungültiger Dateideskriptor
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1351] device 2 TS buffer thread ended (pid=1308, tid=1351)
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1350] streamdev-client: Connected to server 192.168.241.200:2004 using protocol version 1.0
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1350] buffer stats: 71628 (3%) used
+Aug 18 20:03:05 Cubieboard2 vdr[1308]: [1350] device 2 receiver thread ended (pid=1308, tid=1350)
+Aug 18 20:03:06 Cubieboard2 vdr[1308]: [1312] device 2 section handler thread ended (pid=1308, tid=1312)
