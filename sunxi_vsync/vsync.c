@@ -22,7 +22,8 @@ uint64_t get_last_vsync(int disp_fd)
 	uint32_t args[4] = { 0, 0, 0, 0};
 
 	uint64_t vsync;
-	args[1] = (uint64_t)(&vsync);
+	memset(&vsync, 0, sizeof(uint64_t));
+	args[1] = (unsigned long)(&vsync);
 
 	if (ioctl(disp_fd, DISP_CMD_VSYNC_GET, args) < 0)
 		return 1;
@@ -43,8 +44,9 @@ int main ()
 	int fb_fd, disp_fd;
 	uint64_t vsync1, vsync2, sum;
 	uint64_t kvsync1, kvsync2, ksum;
-	static int i = 0;
-	sum, ksum = 0;
+	static int i = 1;
+	sum = 0;
+	ksum = 0;
 	vsync2 = 0;
 
 	disp_fd = open("/dev/disp", O_RDWR);
@@ -60,34 +62,36 @@ int main ()
 
 	while (1)
 	{
-		while ((kvsync2 = get_last_vsync(disp_fd)) == kvsync1)
+		kvsync2 = get_last_vsync(disp_fd);
+		vsync2 = get_time();
+		if ((kvsync2 - kvsync1) < 1000)
 		{
 			usleep(1000);
-			printf("Waiting ....\n");
 		}
-
-		if (vsync2)
+		else
 		{
-			sum += ((vsync1 - vsync2) / 1000);
-			printf("%i Time diff: %" PRIu64 ", Avg = %" PRIu64 "", i, ((vsync1 - vsync2) / 1000), (sum / i));
-			if ((((vsync1 - vsync2) / 1000) > 21000) || (((vsync1 - vsync2) / 1000) < 19000))
-				printf("<------ Not in time!\n");
-			else
-				printf("\n");
+			if (vsync2)
+			{
+				sum += ((vsync2 - vsync1) / 1000);
+				printf("%i Time diff: %" PRIu64 ", Avg = %" PRIu64 "", i, ((vsync2 - vsync1) / 1000), (sum / i));
+				if ((((vsync2 - vsync1) / 1000) > 20500) || (((vsync2 - vsync1) / 1000) < 19500))
+					printf("<------ Not in time!\n");
+				else
+					printf("\n");
+			}
+			if (kvsync2)
+			{
+				ksum += ((kvsync2 - kvsync1) / 1000);
+				printf("%i KTime diff: %" PRIu64 ", Avg = %" PRIu64 "", i, ((kvsync2 - kvsync1) / 1000), (ksum / i));
+				if ((((kvsync2 - kvsync1) / 1000) > 20050) || (((kvsync2 - kvsync1) / 1000) < 19950))
+					printf("<------ Not in time!\n");
+				else
+					printf("\n");
+			}
+			i++;
+			vsync1 = vsync2;
+			kvsync1 = kvsync2;
 		}
-		if (kvsync2)
-		{
-			sum += ((kvsync1 - kvsync2) / 1000);
-			printf("%i KTime diff: %" PRIu64 ", Avg = %" PRIu64 "", i, ((kvsync1 - kvsync2) / 1000), (ksum / i));
-			if ((((kvsync1 - kvsync2) / 1000) > 21000) || (((kvsync1 - kvsync2) / 1000) < 19000))
-				printf("<------ Not in time!\n");
-			else
-				printf("\n");
-		}
-
-		i++;
-		vsync2 = vsync1;
-		kvsync2 = kvsync1;
 	}
 	return 0;
 }
