@@ -22,6 +22,12 @@
 #include <stdlib.h>
 #include "cache.h"
 
+/* printf callback function */
+void print_value(void *itemdata)
+{
+    printf("INT %d", *(int *)itemdata);
+}
+
 int main()
 {
 	int i1, i2, i3, i4, i5, i6, i7;
@@ -36,29 +42,29 @@ int main()
 
 	CACHE *cache = cache_create();
 
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i1 = slot_get(cache, &in1);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i2 = slot_get(cache, &in2);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i3 = slot_get(cache, &in3);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	item_ref(i1, cache);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	item_unref(i2, cache);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i4 = slot_get(cache, &in4);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	item_unref(i1, cache);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	item_unref(i1, cache);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i5 = slot_get(cache, &in5);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i6 = slot_get(cache, &in6);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 	i7 = slot_get(cache, &in7);
-	    cache_list(cache);
+	    cache_list(cache, print_value);
 
 	cache_free(cache);
 

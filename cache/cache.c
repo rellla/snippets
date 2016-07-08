@@ -38,15 +38,19 @@ void cache_free(CACHE *cache)
 	free(cache);
 }
 
-void cache_list(CACHE *cache)
+void cache_list(CACHE *cache, void(*print_cb)(void *))
 {
 	int index;
 	printf("\n");
 	for (index = 0; index < cache->size; index++)
 		if (cache->data[index] == NULL)
-			printf(">>> [%d] NULL\n", index);
+			printf(">>> [%d @ %x] NULL\n", index, cache->data[index]);
 		else
-			printf(">>> [%d] INT %d, Data %x, ItemData %x, Ref %d\n", index, *(int *)cache->data[index]->itemdata, cache->data[index], cache->data[index]->itemdata, cache->data[index]->refcount);
+		{
+			printf(">>> [%d @ %x] ", index, cache->data[index]);
+			print_cb(cache->data[index]->itemdata);
+			printf(", ItemData %x, Ref %d\n", cache->data[index]->itemdata, cache->data[index]->refcount);
+		}
 	printf("\n");
 
 }
@@ -76,7 +80,7 @@ int slot_get(CACHE *cache, void *item_p)
 	if (data == NULL)
 		return -1;
 
-	printf("Get free slot for %d\n", *(int *) item_p);
+	printf("Get free slot for %x\n", item_p);
 	for (index = 0; index < cache->size; index++)
 		if (cache->data[index] == NULL)
 			break;
@@ -96,7 +100,7 @@ int slot_get(CACHE *cache, void *item_p)
 
 	data->refcount++;
 	data->itemdata = item_p;
-	printf("Found slot for %d -> %d\n", *(int *)item_p,  index);
+	printf("Found slot for %x -> %d\n", item_p,  index);
 
 	cache->data[index] = data;
 

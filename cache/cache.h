@@ -15,7 +15,6 @@ typedef struct
 } CACHE;
 
 CACHE *cache_create(void);
-void cache_list(CACHE *cache);
 void item_ref(ITEM item, CACHE *cache);
 void item_unref(ITEM item, CACHE *cache);
 int slot_get(CACHE *cache, void *item_p);
