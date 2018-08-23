@@ -39,11 +39,11 @@ static const float points2[MAXPOINTS][2] = {
 };
 
 static const float points3[MAXPOINTS][2] = {
-    {    476,     404},
-    {    600,    3335},
-    {    761,    5408},
-    {    944,    3895},
-    {    541,    2167}
+    {    747,    6123},
+    {   1186,    1095},
+    {    444,     547},
+    {    626,    4240},
+    {   1220,     428}
 };
 
 int main()
@@ -57,14 +57,17 @@ int main()
     float A2[3][3];
     float A3[3][3];
     float sum, deta1, deta2, deta3, detata = 0.0;
-    float a, b, c = 0.0;
+    float a, b, c, d, e = 0.0;
     int i, j, k, m = 0;
 
     /* which array should we use? */
     for (i = 0; i < MAXPOINTS; i++) {
-	points[i][0] = points2[i][0]/100.0;
-	points[i][1] = points2[i][1]/100.0;
-	points[i][2] = points2[i][2]/100.0;
+	points[i][0] = points3[i][0]/100.0;
+	points[i][1] = points3[i][1]/100.0;
+	points[i][2] = points3[i][2]/100.0;
+//	points[i][0] = points3[i][0];
+//	points[i][1] = points3[i][1];
+//	points[i][2] = points3[i][2];
     }
 
 #ifdef DEBUG
@@ -231,8 +234,12 @@ int main()
     b = (float)deta2 / (float)detata;
     c = (float)deta3 / (float)detata;
 
-    printf("Use this formula::\n");
-    printf("y = (%.2f)x^2 + (%.2f)x + (%.2f)\n", c, b, a);
+    d = b / (2 * c);
+    e = -(b * b) / (4 * c) + a;
+
+    printf("Use this formula:\n");
+    printf("y = %.2fx² + %.2fx + %.2f\n", c, b, a);
+    printf("y = %.2f * ( x - %.2f )² + %.2f\n", c, -1*d, e);
     printf("\n");
 
     return 0;
