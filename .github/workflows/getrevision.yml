@@ -15,18 +15,18 @@ jobs:
 
           # Version 1
           CMD="git ls-remote https://github.com/${{ github.repository }} | head -1 | sed \"s/HEAD//\" | cut -c 1-7"
-          VREV=eval $CMD || true
-          echo "Version 1: $VREV"
+          VREV1=eval $CMD || true
+          echo "Version 1: $VREV1"
 
           # Version 2
-          VREV=`git ls-remote https://github.com/${{ github.repository }} | head -1 | sed "s/HEAD//" | cut -c 1-7`
-          echo "Version 2: $VREV"
+          VREV2=`git ls-remote https://github.com/${{ github.repository }} | head -1 | sed "s/HEAD//" | cut -c 1-7`
+          echo "Version 2: $VREV2"
 
           # Version 3
-          VREV=$(git ls-remote https://github.com/${{ github.repository }} | head -1 | sed "s/HEAD//" | cut -c 1-7)
-          echo "Version 3: $VREV"
+          VREV3=$(git ls-remote https://github.com/${{ github.repository }} | head -1 | sed "s/HEAD//" | cut -c 1-7)
+          echo "Version 3: $VREV3"
 
           # Version 4
           CMD="git ls-remote https://github.com/${{ github.repository }} | head -1 | sed s/HEAD// | cut -c 1-7"
-          VREV=eval $CMD || true
-          echo "Version 4: $VREV"
+          VREV4=eval $CMD || true
+          echo "Version 4: $VREV4"
