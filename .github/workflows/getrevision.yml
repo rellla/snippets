@@ -10,9 +10,9 @@ jobs:
       - name: Get
         run: |
           set -e
-          
+
           echo "Repository: ${{ github.repository }}"
-          
+
           # Version 1
           CMD="git ls-remote https://github.com/${{ github.repository }} | head -1 | sed \"s/HEAD//\" | cut -c 1-7"
           VREV=eval $CMD || true
@@ -21,7 +21,12 @@ jobs:
           # Version 2
           VREV=`git ls-remote https://github.com/${{ github.repository }} | head -1 | sed "s/HEAD//" | cut -c 1-7`
           echo "Version 2: $VREV"
-          
+
           # Version 3
           VREV=$(git ls-remote https://github.com/${{ github.repository }} | head -1 | sed "s/HEAD//" | cut -c 1-7)
           echo "Version 3: $VREV"
+
+          # Version 4
+          CMD=`git ls-remote https://github.com/${{ github.repository }} | head -1 | sed s/HEAD// | cut -c 1-7`
+          VREV=eval $CMD || true
+          echo "Version 4: $VREV"
